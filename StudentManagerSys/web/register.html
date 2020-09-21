@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>添加新学员</title>
+</head>
+<body>
+<form action="StudentServlet?method=AddStudents" method="post" enctype="multipart/form-data">
+    <table>
+        <tr>
+            <td>姓名：</td>
+            <td><input type="text" value="" name="name"></td>
+        </tr>
+        <tr>
+            <td>年龄：</td>
+            <td><input type="text" value="" name="age"></td>
+        </tr>
+        <tr>
+            <td>性别：</td>
+            <td><input type="radio" checked="checked" name="sex" value="男">男<input type="radio" name="sex" value="女">女</td>
+        </tr>
+        <tr>
+            <td>生日:</td>
+            <td><input type="date" name="birthday" value=""></td>
+        </tr>
+        <tr>
+            <td>学历:</td>
+            <td>
+                <select name="degree" id="">
+                    <option value="本科">本科</option>
+                    <option value="专科">专科</option>
+                    <option value="硕士">硕士</option>
+                    <option value="博士">博士</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>爱好:</td>
+            <td>
+                <input type="checkbox" name="hobby" value="唱歌">唱歌
+                <input type="checkbox" name="hobby" value="跳舞">跳舞
+                <input type="checkbox" name="hobby" value="游泳">游泳
+                <input type="checkbox" name="hobby" value="上网">上网
+            </td>
+        </tr>
+        <tr>
+            <td>头像：</td>
+            <td><input type="file" name="pic"></td>
+        </tr>
+        <tr>
+            <td>备注：</td>
+            <td><textarea name="mark" cols="30" rows="5"></textarea></td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center"><input type="submit" value="submit"><input type="reset" value="reset"></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
