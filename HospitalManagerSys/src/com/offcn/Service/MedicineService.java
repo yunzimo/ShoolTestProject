@@ -1,14 +1,14 @@
 package com.offcn.Service;
 
 import com.offcn.Bean.Medicine;
-import com.offcn.Dao.Imp.MedicineDaoImp;
+
 import com.offcn.Dao.MedicineDao;
 import com.offcn.Utils.LimitTool;
 
 import java.util.List;
 
 public class MedicineService {
-    MedicineDao md=new MedicineDaoImp();
+    MedicineDao md;
     public int QueryTotaoCount(String name,String type){
         return md.QueryTotaoCount(name,type);
     }

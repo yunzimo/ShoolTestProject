@@ -3,16 +3,15 @@ package com.offcn.Service;
 import com.offcn.Bean.Doctor;
 import com.offcn.Bean.Register;
 import com.offcn.Dao.DoctorDao;
-import com.offcn.Dao.Imp.DoctorDaoImp;
-import com.offcn.Dao.Imp.RegisterDaoImp;
+
 import com.offcn.Dao.RegisterDao;
 import com.offcn.Utils.LimitTool;
 
 import java.util.List;
 
 public class RegisterService {
-    RegisterDao rd=new RegisterDaoImp();
-    DoctorDao dd=new DoctorDaoImp();
+    RegisterDao rd;
+    DoctorDao dd;
     public int QueryTotalCount(String rid, String name, String department){
         return rd.TotalCount(rid,name,department);
     }

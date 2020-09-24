@@ -2,14 +2,14 @@ package com.offcn.Service;
 
 import com.offcn.Bean.Doctor;
 import com.offcn.Dao.DoctorDao;
-import com.offcn.Dao.Imp.DoctorDaoImp;
+
 import com.offcn.Utils.LimitTool;
 
 
 import java.util.List;
 
 public class DoctorService {
-    DoctorDao dd=new DoctorDaoImp();
+    DoctorDao dd;
     public List<Doctor> QueryDoctorByKey(String name, String department, LimitTool tool){
         return dd.QueryDoctorByKey(name, department,tool);
     }

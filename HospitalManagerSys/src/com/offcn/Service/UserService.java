@@ -1,13 +1,13 @@
 package com.offcn.Service;
 
 import com.offcn.Bean.User;
-import com.offcn.Dao.Imp.UserDaoImp;
+
 import com.offcn.Dao.UserDao;
 
 import javax.servlet.http.HttpSession;
 
 public class UserService {
-    UserDao ud=new UserDaoImp();
+    UserDao ud;
     public boolean InsertUser(User user){
         return ud.InsertUser(user)>0;
     }
